@@ -35,3 +35,27 @@
 
 
 //    ARRAY İTERATİON
+//1.Method
+
+const student=["bedirhan","recep","halil ibrahim","enes","onur"];
+const print=(name)=>{
+    console.log(name);
+}
+
+student.forEach(print);
+
+//2.method
+student.forEach((name)=>console.log(name));
+
+const payments=[100,300,-200,500,-500];
+let sum =0
+payments.forEach((pay)=> (sum+=pay ));
+console.log(sum);
+
+payments.forEach((p,i)=>{
+    p>0 ? console.log(i,`you deposit ${p}`) :console.log(i,`you witdraw ${p}`);
+    console.log(i,);
+});
+const numbers=[2,3,4,5]
+const doubled=numbers.map(n=>n*2);
+console.log(doubled,numbers);
